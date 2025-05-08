@@ -2,8 +2,75 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="700" d:DesignHeight="900"
         x:Class="baza.MainWindow"
         Title="baza">
-    Welcome to Avalonia!
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Margin="7" Grid.Row="0" Grid.Column="1" TextAlignment="Right" Text="Numer albumu: " Height="30" Width="250"></TextBlock>
+        <TextBox x:Name="nr_albumu" Margin="7" Grid.Row="0" Grid.Column="2" Height="30" Width="250"></TextBox>
+        
+        <TextBlock Margin="7" Grid.Row="1" Grid.Column="1" TextAlignment="Right" Text="Nazwisko i imię: " Height="30" Width="250"></TextBlock>
+        <TextBox x:Name="nazwisko" Margin="7" Grid.Row="1" Grid.Column="2" Height="30" Width="250"></TextBox>
+        
+        <TextBlock Margin="7" Grid.Row="2" Grid.Column="1" TextAlignment="Right" Text="Semestr i rok: " Height="30" Width="250"></TextBlock>
+        <TextBox x:Name="semestr" Margin="7" Grid.Row="2" Grid.Column="2" Height="30" Width="250"></TextBox>
+        
+        <TextBlock Margin="7" Grid.Row="3" Grid.Column="1" TextAlignment="Right" Text="Kierunek i stopień: " Height="30" Width="250"></TextBlock>
+        <TextBox x:Name="kierunek" Margin="7" Grid.Row="3" Grid.Column="2" Height="30" Width="250"></TextBox>
+        
+        <TextBlock Margin="7" Grid.Row="4" Grid.Column="1" TextAlignment="Right" Text="Data złożenia wniosku: " Height="30" Width="250"></TextBlock>
+        <TextBox x:Name="data_zlozenia" Margin="7" Grid.Row="4" Grid.Column="2" Height="30" Width="250"></TextBox>
+        
+        <TextBlock Margin="7" Grid.Row="5" Grid.Column="1" TextAlignment="Right" Text="Poprawiany przedmiot: " Height="30" Width="250"></TextBlock>
+        <TextBox x:Name="poprawiany" Margin="7" Grid.Row="5" Grid.Column="2" Height="30" Width="250"></TextBox>
+        
+        <TextBlock Margin="7" Grid.Row="6" Grid.Column="1" TextAlignment="Right" Text="Punkty: " Height="30" Width="250"></TextBlock>
+        <TextBox x:Name="punkty" Margin="7" Grid.Row="6" Grid.Column="2" Height="30" Width="250"></TextBox>
+        
+        <TextBlock Margin="7" Grid.Row="7" Grid.Column="1" TextAlignment="Right" Text="Prowadzący przedmiot: " Height="30" Width="250"></TextBlock>
+        <TextBox x:Name="przeprowadzony" Margin="7" Grid.Row="7" Grid.Column="2" Height="30" Width="250"></TextBox>
+        
+        <TextBlock Margin="7" Grid.Row="8" Grid.Column="1" TextAlignment="Right" Text="Uzasadnienie: " Height="30" Width="250"></TextBlock>
+        <TextBox x:Name="uzasadnienie" Margin="100, 7, 7, 7" Grid.Row="8" Grid.RowSpan="2" Grid.Column="2" Height="80" Width="350"></TextBox>
+        
+        <TextBlock Margin="7" Grid.Row="10" Grid.Column="1" TextAlignment="Right" Text="Data i podpis studenta: " Height="30" Width="250"></TextBlock>
+        <TextBox x:Name="podpis_student" Margin="7" Grid.Row="10" Grid.Column="2" Height="30" Width="250"></TextBox>
+        
+        <TextBlock Margin="7" Grid.Row="11" Grid.Column="1" TextAlignment="Right" Text="Skład komisji: " Height="30" Width="250"></TextBlock>
+        <TextBox x:Name="komisja_1" Margin="7" Grid.Row="11" Grid.Column="2" Height="30" Width="250"></TextBox>
+        <TextBox x:Name="komisja_2" Margin="7" Grid.Row="12" Grid.Column="2" Height="30" Width="250"></TextBox>
+        <TextBox x:Name="komisja_3" Margin="7" Grid.Row="13" Grid.Column="2" Height="30" Width="250"></TextBox>
+        
+        <TextBlock Margin="7" Grid.Row="14" Grid.Column="1" TextAlignment="Right" Text="Data podjęcia decysji: " Height="30" Width="250"></TextBlock>
+        <TextBox Margin="7" Grid.Row="14" Grid.Column="2" Height="30" Width="250"></TextBox>
+        
+        <Button Grid.Column="1" Grid.Row="15" Grid.ColumnSpan="2" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="150"
+                Content="ZATWIERDŹ" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                Click="zatwierdzenie"></Button>
+    </Grid>
 </Window>
